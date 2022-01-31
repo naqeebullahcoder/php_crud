@@ -1,14 +1,13 @@
 -- phpMyAdmin SQL Dump
--- version 4.9.2
+-- version 5.1.1
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 30, 2019 at 01:20 PM
--- Server version: 10.4.10-MariaDB
--- PHP Version: 7.3.12
+-- Generation Time: Jan 31, 2022 at 03:23 PM
+-- Server version: 10.4.21-MariaDB
+-- PHP Version: 7.4.23
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET AUTOCOMMIT = 0;
 START TRANSACTION;
 SET time_zone = "+00:00";
 
@@ -41,11 +40,11 @@ CREATE TABLE `student` (
 --
 
 INSERT INTO `student` (`sid`, `sname`, `saddress`, `sclass`, `sphone`) VALUES
-(1, 'Salman Khan', '#34 sdfdsfsdf', 1, '9898989874'),
-(2, 'Anil Kapoor', '#654 KD Building Mumbai', 1, '9874587456'),
-(11, 'Juhi Chawla', '#34 JC Road, Mumbai', 1, '6545546546'),
-(12, 'Shahid Kapoor', '#76 SK Building, Mumbai', 3, '43435435'),
-(13, 'Ranbir Singh', '#45 RS Buiding, Pune', 3, '34435435');
+(1, 'Ali', 'Lahore, Pakistan', 2, '9898989874'),
+(2, 'Abid', 'Karachi, Pakistan', 4, '9874587456'),
+(11, 'Hannan', 'Islamabad, Pakistan', 3, '6545546546'),
+(12, 'Manzar', 'Lahore, Pakistan', 1, '43435435'),
+(13, 'Naqeeb', 'Lahore, Pakistan', 1, '34435435');
 
 -- --------------------------------------------------------
 
@@ -63,10 +62,10 @@ CREATE TABLE `studentclass` (
 --
 
 INSERT INTO `studentclass` (`cid`, `cname`) VALUES
-(1, 'BCA'),
-(2, 'Btech'),
-(3, 'Bsc'),
-(4, 'Bcom');
+(1, 'BS-CS'),
+(2, 'BS-SE'),
+(3, 'BBA'),
+(4, 'MS-CS');
 
 --
 -- Indexes for dumped tables
@@ -92,7 +91,7 @@ ALTER TABLE `studentclass`
 -- AUTO_INCREMENT for table `student`
 --
 ALTER TABLE `student`
-  MODIFY `sid` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+  MODIFY `sid` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 
 --
 -- AUTO_INCREMENT for table `studentclass`
